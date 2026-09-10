@@ -12,7 +12,7 @@ nascimento.max = `${ano}-${mes}-${dia}`;
 // O navegador valida os campos antes de executar o evento submit.
 formulario.addEventListener('submit', function (evento) {
     evento.preventDefault();
-    mensagem.textContent = 'Cadastro validado com sucesso! Esta é uma demonstração: nenhum dado foi enviado ou salvo.';
+    mensagem.textContent = 'Cadastro validado com sucesso!';
 });
 
 formulario.addEventListener('reset', function () {

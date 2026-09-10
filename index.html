@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
+
 <body>
     <main>
         <h1>Cadastro simples</h1>
@@ -18,7 +20,8 @@
                 <legend>1. Dados Pessoais</legend>
                 <div class="campo">
                     <label for="nome">Nome completo *</label>
-                    <input type="text" id="nome" name="nome" minlength="10" autocomplete="name" required aria-describedby="dica-nome">
+                    <input type="text" id="nome" name="nome" minlength="10" autocomplete="name" required
+                        aria-describedby="dica-nome">
                     <small id="dica-nome">Digite pelo menos 10 caracteres.</small>
                 </div>
                 <div class="campo">
@@ -35,7 +38,8 @@
                 </div>
                 <div class="campo">
                     <label for="celular">Celular *</label>
-                    <input type="tel" id="celular" name="celular" placeholder="(65) 99999-9999" autocomplete="tel" required>
+                    <input type="tel" id="celular" name="celular" placeholder="(65) 99999-9999" autocomplete="tel"
+                        required>
                 </div>
             </fieldset>
 
@@ -52,14 +56,16 @@
                         <option value="cienciadedados">Ciência de Dados</option>
                     </select>
                 </div>
-                <div class="campo" role="group" aria-labelledby="titulo-experiencia" aria-describedby="dica-experiencia">
+                <div class="campo" role="group" aria-labelledby="titulo-experiencia"
+                    aria-describedby="dica-experiencia">
                     <p id="titulo-experiencia">Nível de experiência</p>
-                    <p id="dica-experiencia">Você pode marcar mais de uma opção, considerando suas experiências em áreas diferentes.</p>
+
                     <label class="opcao" for="iniciante">
                         <input type="checkbox" id="iniciante" name="experiencia" value="iniciante" checked> Iniciante
                     </label>
                     <label class="opcao" for="intermediario">
-                        <input type="checkbox" id="intermediario" name="experiencia" value="intermediario"> Intermediário
+                        <input type="checkbox" id="intermediario" name="experiencia" value="intermediario">
+                        Intermediário
                     </label>
                     <label class="opcao" for="avancado">
                         <input type="checkbox" id="avancado" name="experiencia" value="avancado"> Avançado
@@ -67,7 +73,8 @@
                 </div>
                 <div class="campo">
                     <label for="biografia">Biografia</label>
-                    <textarea id="biografia" name="biografia" rows="5" placeholder="Conte um pouco sobre seus estudos e interesses."></textarea>
+                    <textarea id="biografia" name="biografia" rows="5"
+                        placeholder="Conte um pouco sobre seus estudos e interesses."></textarea>
                 </div>
             </fieldset>
 
@@ -75,7 +82,8 @@
                 <legend>3. Redes Sociais</legend>
                 <div class="campo">
                     <label for="instagram">Link do Instagram</label>
-                    <input type="url" id="instagram" name="instagram" placeholder="https://www.instagram.com/seuusuario">
+                    <input type="url" id="instagram" name="instagram"
+                        placeholder="https://www.instagram.com/seuusuario">
                 </div>
                 <div class="campo">
                     <label for="github">Link do GitHub</label>
@@ -83,9 +91,9 @@
                 </div>
             </fieldset>
 
-            <p id="termos-descricao">Termos desta demonstração: os dados são usados apenas para testar o formulário nesta página. Eles não são salvos nem enviados a um servidor.</p>
             <label class="opcao" for="termos">
-                <input type="checkbox" id="termos" name="termos" required aria-describedby="termos-descricao"> Aceito os termos e condições. *
+                <input type="checkbox" id="termos" name="termos" required aria-describedby="termos-descricao"> Aceito os
+                termos e condições. *
             </label>
             <label class="opcao" for="newsletter">
                 <input type="checkbox" id="newsletter" name="newsletter"> Aceito receber a newsletter (opcional).
@@ -98,4 +106,5 @@
         </form>
     </main>
 </body>
+
 </html>
