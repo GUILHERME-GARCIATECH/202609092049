@@ -56,19 +56,18 @@
                         <option value="cienciadedados">Ciência de Dados</option>
                     </select>
                 </div>
-                <div class="campo" role="group" aria-labelledby="titulo-experiencia"
-                    aria-describedby="dica-experiencia">
+                <div class="campo" role="radiogroup" aria-labelledby="titulo-experiencia">
                     <p id="titulo-experiencia">Nível de experiência</p>
 
                     <label class="opcao" for="iniciante">
-                        <input type="checkbox" id="iniciante" name="experiencia" value="iniciante" checked> Iniciante
+                        <input type="radio" id="iniciante" name="experiencia" value="iniciante" checked> Iniciante
                     </label>
                     <label class="opcao" for="intermediario">
-                        <input type="checkbox" id="intermediario" name="experiencia" value="intermediario">
+                        <input type="radio" id="intermediario" name="experiencia" value="intermediario">
                         Intermediário
                     </label>
                     <label class="opcao" for="avancado">
-                        <input type="checkbox" id="avancado" name="experiencia" value="avancado"> Avançado
+                        <input type="radio" id="avancado" name="experiencia" value="avancado"> Avançado
                     </label>
                 </div>
                 <div class="campo">
@@ -92,7 +91,7 @@
             </fieldset>
 
             <label class="opcao" for="termos">
-                <input type="checkbox" id="termos" name="termos" required aria-describedby="termos-descricao"> Aceito os
+                <input type="checkbox" id="termos" name="termos" required> Aceito os
                 termos e condições. *
             </label>
             <label class="opcao" for="newsletter">
