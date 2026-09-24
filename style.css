@@ -101,3 +101,11 @@ button[type="reset"] {
 #mensagem {
     color: #24652d;
 }
+.input-error {
+    border-color: #dc3545 !important;
+    background-color: #fff5f5;
+}
+
+.input-error:focus {
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.4) !important;
+}
