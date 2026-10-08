@@ -46,6 +46,13 @@ console.log(date);
 
 console.log(obj.items[0]?.description);
 
+function subTotal( {price, quantity}: Items ): number{
+    return price * quantity;
+}
+
+console.log(subTotal(obj.items[0]!));
+console.log(subTotal(obj.items[1]!));
+
 const total = obj.items.reduce((acc, a) => acc + (a.price * a.quantity), 0);
 
 console.log(total);
